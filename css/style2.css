@@ -5,9 +5,10 @@ body{
 }
 header{
     background-color: #B68D40;
-    color:#FFFDD0
+    color:#FFFDD0;
 }
-h3,h4,.cName, b{
+
+h3,h4, header h1, b{
     color: #ff7300;
 }
 
@@ -34,4 +35,20 @@ td, th {
 
 a,span{
     color: #b64069;
+}
+
+
+#switchButton{
+    background-color: #373741;
+    color:#ffd700
+}
+
+.topnav {
+    background-color: #432f21;
+}
+
+
+.active{
+    color: #FFFDD0;
+    background-color: #478542;
 }

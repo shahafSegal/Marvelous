@@ -1,0 +1,1 @@
+open the website on server/liveserver otherwise the footer and header wont show
