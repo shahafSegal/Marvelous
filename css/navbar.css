@@ -1,35 +1,25 @@
 .topnav {
-    z-index: 100;
-    position: sticky;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
     grid-area: navBar;
-    align-items: stretch;
+    align-items: center;
     width: 100%;
-    height: 3vh;
-    top: 5px ;
-    }
+    height: 4vh;
 
-.navPage {
-    color: #f2f2f2;
-   justify-items: start;
-    
-    font-size: 2.5vmin;
-    user-select: none;
 }
 
-a , a:link ,a:visited ,a:active{
-    text-decoration: none;
-    color: inherit;
-
+.navPage {
+   justify-items: start;
+    font-size: 2.5vmin;
+    user-select: none;
 }
 
 .navPage:hover {
     font-weight: bold;
 }
 
-.active{
+#active{
     font-weight: bold;
 
 }

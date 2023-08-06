@@ -1,0 +1,65 @@
+/*light mode,only color*/
+body , .main{
+    background-color: #FFFDD0;
+    color: #4069b6
+}
+header{
+    background-color: #dcaa4e;
+    color: #156025;
+}
+
+h3,h4, h1, b{
+    color: #ff7300;
+}
+article h2{
+    color: #ff0099;
+}
+
+footer{
+    background-color: #D6AD60;
+    color: #5240b6;
+}
+
+ table {
+    border: 2px solid #ff7300;
+}
+  
+td, th {
+    border: 1px solid #000000; 
+}
+
+.prjTbl {
+    border: 2px solid #5240b6; 
+}
+  
+.prjTbl td, .prjTbl th {
+    border: 1px solid #5240b6; 
+}
+
+a,span{
+    color: #b64069;
+}
+
+
+#themeSwButton{
+    background-color: #373741;
+    color:#ffd700
+}
+
+.topnav {
+    background-color: #432f21;
+}
+
+.navPage , .navPage:hover  { 
+    color:#ffd700;
+}
+
+
+#active{
+    color: #FFFDD0;
+    background-color: #478542;
+}
+
+.movieCard article{
+    background-color: #dcaa4e;
+}

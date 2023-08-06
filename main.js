@@ -10,28 +10,21 @@ $(function() {
         $('#header-paragraph').text(pageTitle);
 
 
-        //dark/ ligt mode button
-        var switchButton = document.getElementById('switchButton');
+        //dark/ light mode button
+        var switchButton = document.getElementById('themeSwButton');
         if (switchButton){
 
             switchButton.addEventListener('click', () => {
                 if (isStylesheet1Active) {
-                    stylesheet.href = 'css/style2.css';
+                    stylesheet.href = 'css/lightStyle.css';
                     switchButton.textContent="switch to dark mode"
                 } else {
-                    stylesheet.href = 'css/style1.css';
+                    stylesheet.href = 'css/darkStyle.css';
                     switchButton.textContent="switch to light mode"
                 }
                 isStylesheet1Active = !isStylesheet1Active;
             });            
         }
-
-
-    });
-
-    //load the topnav into the document
-    $.get('common-parts/topnav.html', function(data) {
-        $('#common-nav').html(data);
 
         //activate the navPage you are in
         const anchors = document.getElementsByClassName("navPage");
@@ -41,14 +34,18 @@ $(function() {
         for( var i=0; i < anchors.length; i++ ) {
         
             if (anchors[i].getAttribute('href') === currentPage ) {
-                anchors[i].classList.add('active');
+                anchors[i].id ='active';
                 break;
             }
         }
 
 
-
     });
+
+
+        
+
+
         
 
 
