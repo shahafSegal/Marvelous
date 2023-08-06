@@ -30,12 +30,11 @@ $(function() {
         const anchors = document.getElementsByClassName("navPage");
         const currentPage = window.location.pathname;
         //incase the page has no /index.html
-        if( "/Marvelous"=== currentPage && anchors[0].getAttribute('href') === "index.html" ){
+        if( "/Marvelous" === currentPage){
             anchors[0].id ='active'; 
         }
         else{
             for( var i=0; i < anchors.length; i++ ) {
-            
                 if ( '/Marvelous/'+anchors[i].getAttribute('href') === currentPage ){
                     anchors[i].id ='active';
                     break;
