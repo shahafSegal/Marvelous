@@ -67,3 +67,8 @@ a,span{
 .movieCard article{
     background-color: #373741;
 }
+
+form input ,form textarea{
+    background-color: #6f6f6f ;
+    color:#ffd700
+}

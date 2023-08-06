@@ -30,7 +30,7 @@ $(function() {
         const anchors = document.getElementsByClassName("navPage");
         const currentPage = window.location.pathname;
         //incase the page has no /index.html
-        if( "/Marvelous" === currentPage){
+        if( "/Marvelous/" === currentPage){
             anchors[0].id ='active'; 
         }
         else{

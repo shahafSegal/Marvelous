@@ -2,6 +2,7 @@ body{
     margin: 0;
 }
 
+
 a , a:link ,a:visited ,a:active{
     text-decoration: none;
 }
@@ -14,11 +15,24 @@ a , a:link ,a:visited ,a:active{
     grid-template-columns: 100vw ;
 }
 
-article{
+article, form{
     margin: auto;
     width: 95%;
     text-align: center;
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label::before {
+    content: '\A'; 
+    white-space: pre; 
+    display: block;
+}
+
 
 
 header{
