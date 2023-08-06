@@ -1,6 +1,6 @@
 .topnav {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-evenly;
     grid-area: navBar;
     align-items: center;
@@ -13,6 +13,7 @@
    justify-items: start;
     font-size: 2.5vmin;
     user-select: none;
+    order: 2;
 }
 
 .navPage:hover {
@@ -21,5 +22,5 @@
 
 #active{
     font-weight: bold;
-
+    order: 1;
 }

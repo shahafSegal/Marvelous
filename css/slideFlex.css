@@ -1,0 +1,63 @@
+#sliderCont{
+    display: flex;
+    column-gap: 1vw;
+    background-color: black;
+    align-items: center;
+    width: 96vw;
+    margin: 2vw;
+}
+
+.sliderDiv{
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 0.33%;
+    background-color: black;
+    overflow: hidden; 
+}
+
+.slideEl{
+    width: 33%;
+    min-width: 33%;
+    animation: rotate_slides 30s linear infinite 5s;
+}
+
+.sliderDiv:hover .slideEl{
+    animation-play-state: paused;
+}
+    
+.frst3{
+    animation-name: rotate_slides_frst3;
+}
+
+/*general animation for all slides*/
+@keyframes rotate_slides {
+    0%{ transform: translatex(0);}
+    23%,33.3%{transform: translatex(303%);}
+    56%,66.67%{transform: translatex(606%);}
+    90%,100%{transform: translatex( 909%);}
+}
+/*animation for sliders in the first screen to loops around*/
+@keyframes rotate_slides_frst3 {
+    0%{ transform: translatex(0);}
+    23%{transform: translatex(303%); visibility: visible;}
+    33.3%{transform: translatex(303%); visibility: hidden;}
+    56%{transform: translatex(-303%); visibility: hidden;}
+    66.67%{transform: translatex(-303%); visibility: visible;}
+    90%,100%{transform: translatex(0);}
+}
+
+
+#leftPlay , #rightPlay{
+    height:4vmin; 
+    width:4vmin;
+    min-width: 4vmin;
+    
+}
+
+#leftPlay:checked + .sliderDiv .slideEl{
+    animation-direction: reverse ;
+}
+
+#rightPlay:checked + .sliderDiv .slideEl{
+    animation-direction: normal ;
+}

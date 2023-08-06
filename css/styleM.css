@@ -1,0 +1,32 @@
+
+.movieCont{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: none;
+}
+
+
+.movieCard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 95vw;
+    height: 30vh;
+}
+
+.movieCard article{
+    width: 40%;
+}
+
+
+.trailerCont{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: none;
+    height: auto;
+}
+
+.trailer{
+    width: 90vw;
+    height: 60vw;
+}
