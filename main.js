@@ -33,7 +33,7 @@ $(function() {
 
         for( var i=0; i < anchors.length; i++ ) {
         
-            if (anchors[i].getAttribute('href') === currentPage ) {
+            if ( '/'+anchors[i].getAttribute('href') === currentPage ){
                 anchors[i].id ='active';
                 break;
             }
