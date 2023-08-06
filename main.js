@@ -31,7 +31,7 @@ $(function() {
         const currentPage = window.location.pathname;
         //incase the page has no /index.html
         if( "/Marvelous"=== currentPage && anchors[0].getAttribute('href') === "index.html" ){
-            anchors[i].id ='active'; 
+            anchors[0].id ='active'; 
         }
         else{
             for( var i=0; i < anchors.length; i++ ) {
